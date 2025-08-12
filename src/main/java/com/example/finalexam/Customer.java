@@ -37,4 +37,17 @@ public class Customer {
         }
         return total;
     }
+
+    public Double getTotalSavings(){
+        double total = 0.0;
+        double savingPrice = 0.0;
+        double regularPrice = 0.0;
+
+        for(int i =0; i < products.length; i++){
+            savingPrice += products.getValue("savingPrice");
+            regularPrice += products.getValue("regularPrice");
+        }
+        total = regularPrice + savingPrice;
+        return total;
+    }
 }
