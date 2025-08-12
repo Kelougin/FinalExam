@@ -9,12 +9,12 @@ public class Customer {
     private String phone;
     private Arrays products;
 
-    public int getId() {
-        return id;
-    }
-
     public String getFirstName() {
         return firstName;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getLastName() {

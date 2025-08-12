@@ -4,6 +4,7 @@ module com.example.finalexam {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires com.google.gson;
 
     opens com.example.finalexam to javafx.fxml, com.google.gson;
     exports com.example.finalexam;

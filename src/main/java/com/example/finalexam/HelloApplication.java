@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
@@ -17,7 +18,8 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+        readJson.readJsonFile();
         launch();
     }
 }
