@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 
 public class TableViewController {
@@ -52,6 +53,11 @@ public class TableViewController {
     @FXML
     private void loadAllCustomers()
     {
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        firstNameColumn.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        lastNameColumn.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
+
         System.out.println("called method loadAllCustomers");
     }
 }

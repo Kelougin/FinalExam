@@ -41,7 +41,7 @@ public class Customer {
         return total;
     }
 
-    public Double getTotalSavings(){
+    /*public Double getTotalSavings(){
         double total = 0.0;
         double savingPrice = 0.0;
         double regularPrice = 0.0;
@@ -52,7 +52,7 @@ public class Customer {
         }
         total = regularPrice + savingPrice;
         return total;
-    }
+    }*/
 
     public boolean savedFiveDollars(int total){
         if(total > 5){
