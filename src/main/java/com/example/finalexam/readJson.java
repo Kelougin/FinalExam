@@ -11,7 +11,7 @@ import java.util.List;
 public class readJson {
 
     public static List<Customer> readJsonFile() throws FileNotFoundException {
-        List<Customer> customers = new ArrayList<Customer>();
+        List<Customer> customers = new ArrayList<>();
 
         Gson gson = new Gson();
         Reader reader = new FileReader("C:\\Users\\Jeremy\\Desktop\\Georgian Year - 1\\Semester 3\\Adv Java\\FinalExam\\src\\main\\java\\com\\example\\finalexam\\customers.json");

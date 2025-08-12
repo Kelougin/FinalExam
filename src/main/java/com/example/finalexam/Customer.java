@@ -7,7 +7,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String phone;
-    private Arrays products;
+    private Arrays[] products;
 
     public String getFirstName() {
         return firstName;
@@ -25,7 +25,16 @@ public class Customer {
         return phone;
     }
 
-    public Arrays getProducts() {
+    public Arrays[] getProducts() {
         return products;
+    }
+
+    public Double getTotalPurchases() {
+        double total = 0.0;
+        int i;
+        for (i = 0; i < products.length; i++) {
+            total++;
+        }
+        return total;
     }
 }
