@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+//Jeremy Rocha
+//200618875
 
 public class readJson {
 

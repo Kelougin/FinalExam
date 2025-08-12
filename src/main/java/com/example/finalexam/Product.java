@@ -1,3 +1,6 @@
+//Jeremy Rocha
+//200618875
+
 package com.example.finalexam;
 
 public class Product {
