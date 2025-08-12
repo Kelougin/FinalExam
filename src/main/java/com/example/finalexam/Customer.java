@@ -50,4 +50,12 @@ public class Customer {
         total = regularPrice + savingPrice;
         return total;
     }
+
+    public boolean savedFiveDollars(int total){
+        if(total > 5){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
